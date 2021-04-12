@@ -10,14 +10,12 @@ import org.springframework.web.client.RestTemplate;
 public class UserServiceApplication {
 
 	public static void main(String[] args) {
-
 		SpringApplication.run(UserServiceApplication.class, args);
 	}
 
 	@Bean
 	@LoadBalanced
 	public RestTemplate restTemplete() {
-
 		return new RestTemplate();
 	}
 }

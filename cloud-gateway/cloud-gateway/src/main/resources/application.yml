@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: API-GATEWAY
+  jmx:
+    enabled: true
   cloud:
     gateway:
       routes:
@@ -39,7 +41,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream
+        #include: hystrix.stream
+        include: "*"
 
 #eureka:
 #  client:

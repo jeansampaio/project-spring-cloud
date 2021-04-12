@@ -4,9 +4,16 @@ server:
 spring:
   application:
     name: USER-SERVICE
+  jmx:
+    enabled: true
   zipkin:
     base-url: http://127.0.0.1:9411/
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 #eureka:
 #  client:
 #    register-with-eureka: true

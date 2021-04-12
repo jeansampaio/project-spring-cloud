@@ -6,6 +6,14 @@ spring:
     name: DEPARTMENT-SERVICE
   zipkin:
     base-url: http://127.0.0.1:9411/
+  jmx:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 #eureka:
 #  client:

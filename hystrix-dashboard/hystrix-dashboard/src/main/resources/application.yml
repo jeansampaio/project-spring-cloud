@@ -4,11 +4,18 @@ server:
 spring:
   application:
     name: HYSTRIX-DASHBOARD
+  jmx:
+    enabled: true
 
 hystrix:
   dashboard:
     proxy-stream-allow-list: "*"
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 #eureka:
 #  client:
 #    register-with-eureka: true

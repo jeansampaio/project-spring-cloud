@@ -4,7 +4,14 @@ server:
 spring:
   application:
     name: USER-SERVICE
+  jmx:
+    enabled: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 #eureka:
 #  client:
 #    register-with-eureka: true

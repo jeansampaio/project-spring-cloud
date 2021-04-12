@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: DEPARTMENT-SERVICE
+  jmx:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 #eureka:
 #  client:

@@ -1,0 +1,11 @@
+server:
+  port: 9006
+
+spring:
+  application:
+    name: POST-SERVICE
+  main:
+    banner-mode: "off"
+
+comment-service:
+  base-url: http://localhost:9006

@@ -4,5 +4,13 @@ server:
 spring:
   application:
     name: COMMENT-SERVICE
+  profiles:
+    active: test
+  logstash:
+    server: logstash
+    port: 5000
+  logger:
+    path: ./log
+    name: comment-service
   main:
     banner-mode: "off"

@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: POST-SERVICE
+  logstash:
+    server: logstash
+    port: 5000
+  logger:
+    path: ./log
+    name: post-service
   main:
     banner-mode: "off"
 

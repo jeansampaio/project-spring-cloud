@@ -50,9 +50,13 @@ public class CommentServiceImpl implements CommentService {
         for (int i = 0; i < 10; i++) {
             log.error("Opps Exception raised....");
         }
-        String test = "XXX";
-        if (test.equals("XXX"))
-            throw new RuntimeException("XXXXXXXXXXXXX....");
+
+        log.info("Nova mensagem 1 soadjfojfosjaofjoaofsjs");
+        log.info("Nova Mensagem 2 sdfksdpfkspkfpdsakfpes");
+
+//        String test = "XXX";
+//        if (test.equals("XXX"))
+//            throw new RuntimeException("XXXXXXXXXXXXX....");
         return comments;
     }
 }

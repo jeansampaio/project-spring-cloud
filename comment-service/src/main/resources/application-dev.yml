@@ -1,0 +1,15 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: COMMENT-SERVICE
+  logstash:
+    server: localhost
+    port: 5000
+  logger:
+    path: ./log
+      name: comment-service
+
+  #main:
+  #  banner-mode: "off"
